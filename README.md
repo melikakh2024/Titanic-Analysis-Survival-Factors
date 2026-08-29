@@ -1,7 +1,7 @@
 # Titanic Survival Factor Analysis:
 
 <p align="center">
-  <img src="dataset-card.jpg" width="30%">
+  <img src="titanic.png" width="30%">
 </p>
 
 ## Prerequisites
@@ -23,16 +23,17 @@ The volume of the dataset is fully compatible and suitable for in-memory process
 
 
 ## Initial Hypotheses (Prior to Analysis)
-- Sex: Men have a higher survival rate compared to women.
+- Sex: Male have a higher survival rate compared to Female.
 - Pclass: First-class passengers have a higher survival rate than other classes.
 - Family Status: Solo passengers have a higher survival rate than passengers traveling with   family.
 - Age_category: Children and the elderly have a higher survival rate compared to adults.
 
 ## Results of Analysis:
-- Women survive more than men
-- P class has effcet on survival , first class survove more than others
-- Family status effect on survival , to Analyze family status ,  in this dataset resulted that survival is more in status involves  Alone , ,small, medim , big , so there was narrow gap between mean for each status , the second step calculated SE , it shoews that high probably  this result is not definitive for big family
-- Age_category : results show  survival are more in order in child , young , adults , middlde_age , old
+- Female survived more than Male
+- Pclass has effect on survival , first class survived more than others
+- Family status effect on survival:
+To analyze family status, we initially  computed  mean, std, and count for each category with respect to survival. The results demonestrate survival rates in descending order: Alone > Small > Medium > Big. However, due to the narrow gap between means, we calculated the Standard Error (SE) in the second step. The SE revealed that this ranking is  inconclusive for the Big family group.
+- Age_category : results indicate  survival are more in order child > young > adults > middlde_age > old
 
 ## Statistical Results
 
@@ -54,15 +55,15 @@ big            0.377049  0.062568  0.254416  0.499682
 
 ```
 ### Other Steps:
-- Hnadeling Null value in Age , Filling with mean Age in each Class
-- Creating categorical Column for family as StatusFamily
+- Imputing Missing Values in Age , Filling with mean Age in each Class
+- Constructing Categorical Column for family as StatusFamily
 - Creating Categorical Column for Age as Age_categorical
-- using describe for numerical data
-- plot  count- plot for Survival
+- Summary statistics through describe method for numerical data
+- Count- plot for Survival
 - Heatmap plot for correlation Numerical
 - Summary analysis based on
     -'Age':['min', 'max', 'mean'],
     - 'Fare': 'mean',
     - 'Survived': 'mean'
     - calculating Count for SibSp   Parch
-- Some  Anlysis  steps in the sources for detecting better
+- Some other Anlysis  steps in the sources for detecting better (titanic.ipynb)
