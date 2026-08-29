@@ -1,7 +1,7 @@
 # Titanic Survival Factor Analysis:
 
 <p align="center">
-  <img src="titanic.png" width="30%">
+  <img src="images/titanic.png" width="30%">
 </p>
 
 ## Prerequisites
